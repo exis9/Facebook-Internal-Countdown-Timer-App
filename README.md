@@ -10,7 +10,7 @@ This app is basically the same one Facebook uses.
 
 <img width="1440" alt="Screen Shot 2021-10-06 at 16 02 36" src="https://user-images.githubusercontent.com/91220554/136266678-f4990e6d-5eeb-4a5e-8db7-974beb31da9c.png">
 
-# Install & How to use
+# Install & How to use (Electron)
 
 ```shell
 npm install
@@ -20,3 +20,7 @@ then
 ```shell
 npm start
 ```
+
+# Online Demo (WEB)
+
+[DEMO](https://exis9.github.io/Facebook-Internal-Countdown-Timer-App/src/)
