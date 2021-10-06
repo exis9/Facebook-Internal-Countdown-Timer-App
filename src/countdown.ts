@@ -73,7 +73,9 @@ function plusDateText( d=0, h=0, m=0, s=0 ){
 	tm.setMinutes(tm.getMinutes() + m)
 	tm.setSeconds(tm.getSeconds() + s)
 	//d = '2013/8/30 00:00:00'
-	return tm.getFullYear() + '/' + (tm.getMonth() + 1) +'/' + tm.getDate() + ' ' + String(tm.getHours()).padStart(2, '0') + ':' + String(tm.getMinutes()).padStart(2, '0') +':' + String(tm.getSeconds()).padStart(2, '0')
+	return tm.getFullYear() + '/' + (tm.getMonth() + 1) +'/' + tm.getDate() + ' ' + 
+		String(tm.getHours()).padStart(2, '0') + ':' + String(tm.getMinutes()).padStart(2, '0') +':' + 
+		String(tm.getSeconds()).padStart(2, '0')
 }
 function CDT(){
 	let snd = localStorage.getItem('sndON')
@@ -81,7 +83,9 @@ function CDT(){
 		(document.querySelector('#sndON') as HTMLInputElement).checked = false
 	
 	let d = localStorage.getItem('CDT_DATE')
-	let t = localStorage.getItem('CDT_TASKS').replaceAll('\n', '<br>')
+	let t = localStorage.getItem('CDT_TASKS')
+	if ( t ) 
+		t = t.replaceAll('\n', '<br>')
 	if ( !d )
 	{
 		d = plusDateText(1,0,0)

@@ -188,7 +188,7 @@ function hexToB(h) {return parseInt((cutHex(h)).substring(4,6),16)}
 function cutHex(h) {return (h.charAt(0)=="#") ? h.substring(1,7):h}
 // prototypes	///
 String.prototype.replaceAll = function (org, dest){
-  return this.split(org).join(dest)
+	return this.split(org).join(dest)
 }
 String.prototype.replaceAry = function ( aryList, replaceChar ){
 	var text = this
