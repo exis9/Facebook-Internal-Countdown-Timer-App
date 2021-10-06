@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="index,follow,archive">
+<meta name="description" content="The Facebook style jquery countdown timer." />
+<meta name="keywords" content="countdown, timer, free, software, online, jquery" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Countdown Timer</title>
+<link rel="shortcut icon" href="/favicon.ico">
+<style>
+/*
+@import url("https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css");
+*/
+@import url("countdown.css?3b");
+</style>
+</head>
+<body>
+
+<section class="container">
+	<div class="center">
+		<div id="CDT"></div>
+		<div id="tasks">Hi-Pri Tasks: test test test test test</div>
+	</div>
+</section>
+
+<section id="inputArea">
+	<div>
+		Deadline: 
+		<button class="cBtn_deadline t_3m">3m</button>
+		<button class="cBtn_deadline t_5m">5m</button>
+		<button class="cBtn_deadline t_10m">10m</button>
+		<button class="cBtn_deadline t_1h">1h</button>
+		<button class="cBtn_deadline t_1d">1d</button>
+		<br><input id="inputCDT" type="text" value="">
+	</div>
+
+	<div style="margin:8px 0 2px 0;text-align: left;">
+		Hi-Pri Tasks: 
+		<button class="cBtn_color cYellow"></button>
+		<button class="cBtn_color cRed"></button>
+		<button class="cBtn_color cBlue"></button>
+		<button class="cBtn_color cGreen"></button>
+		<button class="cBtn_color cOrange"></button>
+		<button class="cBtn_color cWhite"></button>
+		<button class="cBtn_color cGray"></button>
+		<br><textarea id="inputTasks" style="width:100%;height:80px;margin-top:2px;"></textarea>
+	</div>
+	<div style="text-align: right;">
+		<label class="cClickable" style="display:inline-block"><input class="cClickable" id="sndON" type="checkbox" checked style="display: inline-block;"> Alarm Sound?</label>
+		<input id="buttonSet" type="button" value="SET" style="display: inline-block">
+	</div>
+	<div style="padding:4px;margin:8px 4px 4px 4px;border:1px dotted gray;background-color:black;color:#999;text-align:left;width:100%;font-size:14px">
+	＜Windows＞<br>
+	Fullscreen: F<br>
+	Zoom In: Ctrl and +<br>
+	Zoom Out: Ctrl and -<br>
+	<br>
+	＜Mac＞<br>
+	Fullscreen: F<br>
+	Zoom In: Command and +<br>
+	Zoom Out: Command and -
+	</div>
+</section>
+
+<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></!--script-->
+<script src="build/myJS5.js"></script>
+<!--script src="build/myJQ.js"></script-->
+<script src="build/countdown.js"></script>
+</body>
+</html>
