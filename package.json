@@ -1,14 +1,32 @@
 {
-  "name": "countdown",
-  "version": "1.0.0",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron ."
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "electron": "^15.1.0"
-  },
-  "description": ""
+	"name": "countdown",
+	"version": "1.0.0",
+	"main": "main.js",
+	"scripts": {
+		"start": "electron .",
+		"pack": "electron-builder --dir",
+		"dist": "electron-builder"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"electron": "^15.1.0",
+		"electron-builder": "^22.11.7"
+	},
+	"description": "",
+	"build": {
+		"mac": {
+			"category": "category.tools"
+		},
+		"win": {
+			"target": "portable"
+		},
+		"portable": {
+			"useZip": true
+		},
+		"compression": "normal",
+		"directories": {
+			"output": "dist"
+		}
+	}
 }
