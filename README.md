@@ -1,6 +1,7 @@
 # Facebook's Internal Countdown Timer App
 **Facebook** uses the internal countdown timer app for increasing their own workers' productivity to display the realtime deadline for each project. 
-This app is basically the same one Facebook uses.
+This app is basically the same one Facebook uses. 
+[Online DEMO](https://exis9.github.io/Facebook-Internal-Countdown-Timer-App/src/)
 
 ![Facebook_Internal_deadline_app](https://user-images.githubusercontent.com/91220554/136265782-b3fe7101-8ebe-40dc-aa52-b6a9ea6f28d0.png)
 
@@ -12,6 +13,8 @@ This app is basically the same one Facebook uses.
 
 # Install & How to use (Electron)
 
+Download and go to the directory of this app using cd command or something and npm install
+
 ```shell
 npm install
 ```
@@ -20,6 +23,24 @@ then
 ```shell
 npm start
 ```
+---
+
+# How to make executable files
+
+Makiing Mac executable file
+
+```shell
+/* install yarn first */
+sudo yarn dist
+```
+
+Makiing Windows executable file
+
+```shell
+/* install yarn first */
+sudo yarn dist --win --x64
+```
+
 
 # Online Demo (WEB)
 
