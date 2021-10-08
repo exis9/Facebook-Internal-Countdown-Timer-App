@@ -1,5 +1,5 @@
 # Facebook's Internal Countdown Timer App
-**Facebook** uses the internal countdown timer app for increasing their own workers' productivity to display the realtime deadline for each project. 
+**Facebook** uses the internal countdown timer app for increasing their own workers' productivity by displaying the realtime deadline for each project. 
 This app is basically the same one Facebook uses. 
 [Online DEMO](https://exis9.github.io/Facebook-Internal-Countdown-Timer-App/src/)
 
